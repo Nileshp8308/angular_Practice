@@ -1,0 +1,9 @@
+<p>circle works!</p>
+<br> <br>
+<button (click)="addCircle()">Add Circle</button> <br> <br>
+<button (click)="removeCircle()">Remove Circle</button> <br> <br>
+<h4>White Count {{whiteCount}}</h4> 
+<h4>Gray Count {{grayCount}}</h4>
+<div *ngFor="let item of circle let i=index" class="cont" (click)="AddColor(i)" [class.color]="item.givecolor">
+    
+</div>

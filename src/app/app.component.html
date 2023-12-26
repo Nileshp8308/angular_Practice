@@ -1,0 +1,12 @@
+<p>App works!</p>
+<!-- <input type="text" [(ngModel)]="entriesPerPage"> -->
+<button (click)="unSubscribe()">unSubscribe</button> <br> <br>
+<button (click)="increment()">increment</button> <br> <br> <hr>
+
+<select name="" id="">
+    <option *ngFor="let item of currentEntries" value="">{{item}}</option>
+</select> <br> <br>
+
+<button routerLink="/circle">Circle Component</button>
+
+<router-outlet></router-outlet>
